@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>感恩节聚会报名</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-orange-50 relative min-h-screen flex flex-col items-center justify-start">
+
+<img src="thanksgiving.png" alt="感恩节横幅"
+     class="w-full max-h-96 object-contain mx-auto" />
+
+<!-- 🍂 主内容容器 -->
+<div class="w-full max-w-xl bg-white bg-opacity-95 rounded-2xl shadow-lg p-8 mt-6 z-10 relative">
+  <h1 class="text-4xl font-bold text-orange-600 mb-6 text-center">🦃 共享恩典聚餐 🍂</h1>
+  <p class="text-center text-gray-700 mb-2">🕔 时间：2025 年 11 月 23 日（SUN）5:30 PM</p>
+  <p class="text-center text-gray-700 mb-6">📍 地点：16152 Gale Ave, Hacienda Heights, CA</p>
+  <p class="text-center text-lg font-semibold mb-6 text-brown-700">
+    请填写以下信息，一起欢庆感恩节 🙌
+  </p>
+
+  <form
+          action="https://script.google.com/macros/s/AKfycbyeSTfIBICM8nN1_MmPAQe_sqBNGn3PE4tmyrsXg6GvWdzKIQEyYycuFjyJb1oZV3pM/exec"
+          method="POST"
+          onsubmit="alert('🧡 感谢您的报名！期待与您一同庆祝感恩节 🎉');"
+          class="flex flex-col gap-4"
+  >
+
+    <input type="text" id="name_cn" name="name_cn" placeholder="中文名字"
+           class="border border-orange-200 rounded-lg p-3 w-full focus:ring-2 focus:ring-orange-400" />
+
+    <input type="text" id="name_en" name="name_en" placeholder="英文名字"
+           class="border border-orange-200 rounded-lg p-3 w-full focus:ring-2 focus:ring-orange-400" />
+
+    <input type="text" id="email" name="email" placeholder="Email（聚会前我们会发邮件提醒您😊）" required
+           class="border border-orange-200 rounded-lg p-3 w-full focus:ring-2 focus:ring-orange-400" />
+
+    <select name="age" required class="border border-orange-200 rounded-lg p-3 w-full focus:ring-2 focus:ring-orange-400">
+      <option value="" disabled selected>年龄范围</option>
+      <option value="18-25岁">18-25岁</option>
+      <option value="26-30岁">26-30岁</option>
+      <option value="31-35岁">31-35岁</option>
+      <option value="36-40岁">36-40岁</option>
+    </select>
+
+    <select name="gender" required class="border border-orange-200 rounded-lg p-3 w-full focus:ring-2 focus:ring-orange-400">
+      <option value="" disabled selected>性别</option>
+      <option value="男">男</option>
+      <option value="女">女</option>
+    </select>
+
+    <button type="submit"
+            class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition-colors duration-200 shadow-md">
+      🦃 我要参加感恩节聚会
+    </button>
+  </form>
+
+  <p class="mt-8 text-center text-sm text-gray-500">
+    📧 有疑问请联系：<a href="mailto:gracedesign7000@gmail.com" class="text-orange-600 underline">gracedesign7000@gmail.com</a>
+  </p>
+</div>
+
+<!-- 🍁 背景装饰叶子 -->
+<div class="absolute bottom-0 left-0 w-32 opacity-30">
+  <img src="leaf_left.png" alt="落叶装饰" />
+</div>
+<div class="absolute bottom-0 right-0 w-32 opacity-30">
+  <img src="leaf_right.png" alt="落叶装饰" />
+</div>
+
+</body>
+</html>
